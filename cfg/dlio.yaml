@@ -27,9 +27,14 @@
                                  0.,  0.,  1. ]
     imu/intrinsics/gyro/bias: [ 0.0, 0.0, 0.0 ]
 
-    extrinsics/baselink2imu/t: [ 0.0, -0.2, 0.0 ] 
+    extrinsics/baselink2imu/t: [ 0.0, -0.2, 0.0 ]
+    # for roboboat rosbag
     extrinsics/baselink2imu/R: [ 0.,  -1.,  0.,
                                  1.,  0.,  0.,
+                                 0.,  0.,  1. ] 
+    # for july test rosbag
+    extrinsics/baselink2imu/R: [ 0.,  1.,  0.,
+                                 -1.,  0.,  0.,
                                  0.,  0.,  1. ]
     extrinsics/baselink2lidar/t: [ 0.,  0.,  0. ]
     extrinsics/baselink2lidar/R: [ 1.,  0.,  0.,
