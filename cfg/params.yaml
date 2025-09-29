@@ -15,12 +15,12 @@
     use_sim_time: true
     frames/odom: odom
     frames/baselink: base_link
-    frames/lidar: lidar
-    frames/imu: imu
+    frames/lidar: velodyne
+    frames/imu: imu_link_lio
 
     map/waitUntilMove: true
     map/dense/filtered: false
-    map/sparse/leafSize: 0.25
+    map/sparse/leafSize: 0.01
 
     odom/gravity: 9.80665
     odom/computeTimeOffset: true
