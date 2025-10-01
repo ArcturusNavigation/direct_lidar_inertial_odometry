@@ -22,17 +22,17 @@
     map/dense/filtered: false
     map/sparse/leafSize: 0.01
 
-    odom/gravity: 9.80665
-    odom/computeTimeOffset: true
+    odom/gravity: 0.0
+    odom/computeTimeOffset: false
 
     odom/imu/approximateGravity: false
-    odom/imu/calibration/gyro: true
-    odom/imu/calibration/accel: true
-    odom/imu/calibration/time: 3.0
+    odom/imu/calibration/gyro: false
+    odom/imu/calibration/accel: false
+    odom/imu/calibration/time: 0.0
     odom/imu/bufferSize: 5000
 
-    odom/preprocessing/cropBoxFilter/size: 1.0
-    odom/preprocessing/voxelFilter/res: 0.25
+    odom/preprocessing/cropBoxFilter/size: 3.0
+    odom/preprocessing/voxelFilter/res: 0.01
 
     odom/keyframe/threshD: 1.0
     odom/keyframe/threshR: 45.0
@@ -40,10 +40,10 @@
     odom/submap/keyframe/knn: 10
     odom/submap/keyframe/kcv: 10
     odom/submap/keyframe/kcc: 10
-    odom/gicp/minNumPoints: 64
-    odom/gicp/kCorrespondences: 16
+    odom/gicp/minNumPoints: 100
+    odom/gicp/kCorrespondences: 25
     odom/gicp/maxCorrespondenceDistance: 0.5
-    odom/gicp/maxIterations: 32
+    odom/gicp/maxIterations: 70
     odom/gicp/transformationEpsilon: 0.01
     odom/gicp/rotationEpsilon: 0.01
     odom/gicp/initLambdaFactor: 1e-9
@@ -54,4 +54,4 @@
     odom/geo/Kab: 2.25
     odom/geo/Kgb: 1.0
     odom/geo/abias_max: 5.0
-    odom/geo/gbias_max: 0.5
+    odom/geo/gbias_max: 0.0
